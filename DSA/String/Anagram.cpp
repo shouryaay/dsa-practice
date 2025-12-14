@@ -16,6 +16,7 @@ for(int i=0;i<26;i++){
 }
     return str;
 }
+// we can also compare only the frequency arrays, but i wanted to practice count sort so i compared them :3
 int main(){
     string s1;
     string s2;
