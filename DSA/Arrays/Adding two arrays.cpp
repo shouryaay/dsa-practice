@@ -1,3 +1,4 @@
+//adding two arrays
 #include <iostream>
 int main(){
     int n;
