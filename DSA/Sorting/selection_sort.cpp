@@ -4,7 +4,7 @@ void selection_sort (vector<int>&arr){
     int n= arr.size();
     for(int i=0;i<n;i++){
         int min=i;
-        for(int j=i+1;j<n;j++){
+        for(int j=i+1;j<n-2;j++){
             if(arr[j]<arr[min]){
                 min=j;
             }
