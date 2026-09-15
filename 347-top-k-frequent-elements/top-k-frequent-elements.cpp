@@ -7,17 +7,13 @@ public:
             mpp[nums[i]]++;
         }
         vector<int>res;
+        priority_queue<pair<int,int>>pq;
+        for(auto it:mpp){
+           pq.push({it.second,it.first});
+        }
         for(int i=0;i<k;i++){
-            int max=0;
-            int ele=0;
-            for(auto it:mpp){
-                if(it.second>max){
-                    max=it.second;
-                    ele=it.first;
-                }
-            }
-            res.push_back(ele);
-            mpp.erase(ele);
+            res.push_back(pq.top().second);
+            pq.pop();
         }
         return res;
     }
